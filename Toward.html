@@ -3,19 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project 1 – Portfolio</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Project | Towards Net Zero IoT System</title>
+
+  <style>
+    :root {
+      --primary: #0077b6;
+      --secondary: #0096c7;
+      --bg: #f9f9fb;
+      --text: #222;
+      --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    header a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--secondary);
+      border-left: 4px solid var(--secondary);
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <a href="index.html">← Back to Portfolio</a>
+    <h3>🌱 Towards Net Zero IoT System</h3>
+    <a href="https://armaghanakbar95.github.io/armaghan_abbasi/">← Back to Home</a>
   </header>
 
   <main>
-    <h1>Project 1 Title</h1>
-    <p>Detailed description of what this project does, how it was built, tech stack, challenges, etc.</p>
-    <img src="../images/project1.png" alt="Project 1 Screenshot" />
-    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+    <h1>Towards Net Zero Internet of Things (IoT) System</h1>
+
+    <section id="description">
+      <h2>📘 Project Description</h2>
+      <p>
+        This project explores how IoT devices can be leveraged to monitor and reduce energy consumption
+        in smart environments. By integrating real-time data collection and predictive analytics,
+        the system aims to achieve sustainable energy usage and move towards a net-zero carbon footprint.
+      </p>
+    </section>
+
+    <section id="objectives">
+      <h2>🎯 Objectives</h2>
+      <ul>
+        <li>Develop a smart IoT network for energy-efficient buildings.</li>
+        <li>Implement real-time monitoring and analytics dashboard.</li>
+        <li>Reduce energy waste through automated device control.</li>
+        <li>Provide actionable sustainability insights.</li>
+      </ul>
+    </section>
+
+    <section id="technology">
+      <h2>💻 Technologies Used</h2>
+      <ul>
+        <li>Arduino & Raspberry Pi</li>
+        <li>Python (Data Collection & Analytics)</li>
+        <li>Node.js & Express (Backend API)</li>
+        <li>HTML, CSS, JavaScript (Frontend Dashboard)</li>
+        <li>Firebase / MongoDB (Cloud Storage)</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>🖼️ Project Gallery</h2>
+      <div class="gallery">
+        <img src="images/iot-setup1.jpg" alt="IoT setup image 1" />
+        <img src="images/iot-dashboard.jpg" alt="Dashboard" />
+        <img src="images/iot-sensors.jpg" alt="Sensors used" />
+      </div>
+    </section>
+
+    <section id="links">
+      <h2>🔗 Links</h2>
+      <p>
+        <a href="https://github.com/armaghanakbar95/iot-project" target="_blank">View Source on GitHub</a>
+      </p>
+    </section>
   </main>
+
+  <footer>
+    © 2025 Armaghan Abbasi | Built with 💙 using HTML & CSS
+  </footer>
+
 </body>
 </html>
