@@ -120,7 +120,7 @@
     <h1>Towards Net Zero Internet of Things (IoT) System</h1>
 
     <section id="description">
-      <h2>📘 Project Description</h2>
+      <h2>📘 Project Overview</h2>
       <p>
         Internet of Things come up as game-changing topic following which the real-time monitoring, automation, and data-based decisions in even various industries like agriculture,manufacturing, environmental management, and smart cities can be achieved. IoT systems enable a smooth connection between the physical and the digital world by interconnecting sensors, wireless transmission, and cloud- based analytics. But as development of these systems is spreading at a very high pace, there is a growing demand to assure that the solutions of IoT are not only intelligent and scalable but also energy-efficient and environment friendly.
 Due to the international initiatives towards the minimization of carbon emissions and shifting towards the net-zero power consumption, developing low-power, the long range IoT systems has become a priority. The environmental or industrial monitoring apps used remotely, including air quality monitoring, water resource management, or machinery diagnostics often have to deploy sensors to the places where the reliable power infrastructure is unavailable. Therefore, it has to be a solution that is going to be low-powered, wide-area coverage communication, and also needs to be cloud integrated to get the data and also the decision process as well.
@@ -130,23 +130,94 @@ Due to the international initiatives towards the minimization of carbon emission
     <section id="objectives">
       <h2>🎯 Objectives</h2>
       <ul>
-        <li>Develop a smart IoT network for energy-efficient buildings.</li>
-        <li>Implement real-time monitoring and analytics dashboard.</li>
-        <li>Reduce energy waste through automated device control.</li>
-        <li>Provide actionable sustainability insights.</li>
+        <li>Real time Monitoring System.</li>
+        <li>Long Range, Low Power Communication.</li>
+        <li>Cloud Integration for Data Analytics and Visualization.</li>
+        <li>Evaluate and Optimize Network Performance.</li>
+        <li>Support Scalable System Expansion.</li>
       </ul>
     </section>
 
-    <section id="technology">
-      <h2>💻 Technologies Used</h2>
-      <ul>
-        <li>Arduino & Raspberry Pi</li>
-        <li>Python (Data Collection & Analytics)</li>
-        <li>Node.js & Express (Backend API)</li>
-        <li>HTML, CSS, JavaScript (Frontend Dashboard)</li>
-        <li>Firebase / MongoDB (Cloud Storage)</li>
-      </ul>
-    </section>
+    <section id="technology" class="tech-section">
+  <h2>💻 Technologies Used</h2>
+
+  <div class="tech-category">
+    <h3>🌐 Core Communication Technology</h3>
+    <ul>
+      <li><strong>LoRa (Long Range Radio Communication):</strong> Provides low-power, long-range data transmission.</li>
+      <li>Operates on <strong>868/915 MHz ISM bands</strong> with Chirp Spread Spectrum (CSS) modulation.</li>
+      <li>Enables reliable IoT communication over several kilometres.</li>
+      <li>Used for connecting sensor nodes to the <strong>USRP B210 gateway</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="tech-category">
+    <h3>🔩 Hardware Components</h3>
+    <ul>
+      <li><strong>USRP B210 (Software Defined Radio):</strong> Acts as LoRa receiver; supports 70 MHz–6 GHz range with full-duplex 2×2 MIMO.</li>
+      <li><strong>LILYGO TTGO LoRa32 (ESP32 + SX1276):</strong> Sensor node with Wi-Fi, Bluetooth, OLED display, and battery circuit.</li>
+      <li><strong>Sensors:</strong> 
+        <ul>
+          <li>DHT11 – Measures temperature (0–50 °C) & humidity (20–90 % RH).</li>
+          <li>LDR – Detects ambient light using LM393 comparator.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tech-category">
+    <h3>💾 Software & Tools</h3>
+    <ul>
+      <li><strong>Arduino IDE:</strong> For programming ESP32 firmware in C/C++.</li>
+      <li><strong>GNU Radio (gr-lora_sdr):</strong> For LoRa signal decoding and SDR processing.</li>
+      <li><strong>Python:</strong> Handles data forwarding and cloud integration.</li>
+      <li><strong>Cloud Platforms:</strong>
+        <ul>
+          <li><strong>ThingSpeak:</strong> Real-time data logging, trend analysis, MATLAB analytics.</li>
+          <li><strong>Blynk:</strong> Mobile dashboard with live widgets and push notifications.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<style>
+  #technology {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  #technology h2 {
+    color: #0077b6;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .tech-category {
+    margin-bottom: 2rem;
+  }
+
+  .tech-category h3 {
+    color: #0096c7;
+    margin-bottom: 0.5rem;
+  }
+
+  #technology ul {
+    list-style: disc;
+    padding-left: 2rem;
+    line-height: 1.7;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
 
     <section id="gallery">
       <h2>🖼️ Project Gallery</h2>
