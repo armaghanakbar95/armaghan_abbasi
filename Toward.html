@@ -92,11 +92,13 @@
     }
 
     .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-      box-shadow: var(--shadow);
-    }
+  width: 100%;
+  height: 250px; /* fixed height for all images */
+  object-fit: cover; /* makes image cover the space without distortion */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow);
+}
 
     .gallery img:hover {
       transform: scale(1.05);
