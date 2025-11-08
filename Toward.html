@@ -100,6 +100,12 @@
   transition: transform 0.3s ease;
   box-shadow: var(--shadow);
 }
+    .gallery figure {
+  margin: 0;
+  position: relative; /* needed for absolute positioning of caption */
+  overflow: hidden;   /* keeps caption inside the image */
+  border-radius: 12px;
+}
 
     .gallery img:hover {
       transform: scale(1.05);
