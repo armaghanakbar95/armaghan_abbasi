@@ -100,11 +100,11 @@
   transition: transform 0.3s ease;
   box-shadow: var(--shadow);
 }
-    .gallery figure {
-  margin: 0;
-  position: relative; /* needed for absolute positioning of caption */
-  overflow: hidden;   /* keeps caption inside the image */
-  border-radius: 12px;
+    .gallery figcaption {
+  text-align: center;      /* center horizontally */
+  margin-top: 0.5rem;      /* spacing below the image */
+  font-size: 1rem;
+  color: #333;
 }
 
     .gallery img:hover {
